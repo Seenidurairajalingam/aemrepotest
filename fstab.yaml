@@ -1,6 +1,6 @@
 mountpoints:
   /:
-    url: "https://author-p28206-e1206067.adobeaemcloud.com/bin/franklin.delivery/Bounteous-Inc/aem-commerce-xcom/main"
+    url: "https://author-p28206-e1206067.adobeaemcloud.com/bin/franklin.delivery/Seenidurairajalingam/aemrepotest/main"
     type: "markup"
     suffix: ".html"
 folders:
