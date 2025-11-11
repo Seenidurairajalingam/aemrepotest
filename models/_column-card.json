@@ -1,0 +1,20 @@
+{
+  "models": [
+    {
+      "id": "column-card",
+      "fields": [
+        {
+          "component": "reference",
+          "name": "image",
+          "label": "Background Image",
+          "multi": false
+        },
+        {
+          "component": "richtext",
+          "name": "text",
+          "label": "Text Content"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "models": [
+    {
+      "id": "column",
+      "fields": [
+        {
+          "component": "select",
+          "name": "columns",
+          "label": "Number of Columns",
+          "options": [
+            { "name": "2 Columns", "value": "2" },
+            { "name": "3 Columns", "value": "3" }
+          ]
+        }
+      ]
+    }
+  ]
+}

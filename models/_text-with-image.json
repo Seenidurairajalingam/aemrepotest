@@ -1,0 +1,47 @@
+{
+  "models": [
+    {
+      "id": "text-with-image",
+      "fields": [
+        {
+          "component": "select",
+          "name": "variation",
+          "label": "Layout Variation",
+          "options": [
+            {
+              "name": "Overlay Right",
+              "value": "overlay-right"
+            },
+            {
+              "name": "Overlay Left", 
+              "value": "overlay-left"
+            },
+            {
+              "name": "Side by Side - Text Left",
+              "value": "side-by-side-left"
+            },
+            {
+              "name": "Side by Side - Text Right",
+              "value": "side-by-side-right"
+            },
+            {
+              "name": "Text Below Image",
+              "value": "text-below"
+            }
+          ]
+        },
+        {
+          "component": "reference",
+          "name": "image",
+          "label": "Background Image",
+          "multi": false
+        },
+        {
+          "component": "richtext",
+          "name": "text",
+          "label": "Text Content"
+        }
+      ]
+    }
+  ]
+}

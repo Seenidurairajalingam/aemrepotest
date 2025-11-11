@@ -1,0 +1,9 @@
+mountpoints:
+  /:
+    url: "https://author-p28206-e1206067.adobeaemcloud.com/bin/franklin.delivery/Bounteous-Inc/aem-commerce-xcom/main"
+    type: "markup"
+    suffix: ".html"
+folders:
+  /products/: /products/default
+  /enrichment/: /enrichment/default
+  

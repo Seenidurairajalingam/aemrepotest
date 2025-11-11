@@ -1,0 +1,32 @@
+[
+  {
+    "...": "./_image.json#/models"
+  },
+  {
+    "...": "./_title.json#/models"
+  },
+  {
+    "...": "./_text.json#/models"
+  },
+  {
+    "...": "./_button.json#/models"
+  },
+  {
+    "...": "./_column.json#/models"
+  },
+  {
+    "...": "./_column-card.json#/models"
+  },
+  {
+    "...": "./_text-with-image.json#/models"
+  },
+  {
+    "...": "./_section.json#/models"
+  },
+  {
+    "...": "../blocks/*/_*.json#/models"
+  },
+  {
+    "...": "./_templates.json#/models"
+  }
+]

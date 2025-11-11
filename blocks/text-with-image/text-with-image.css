@@ -1,0 +1,284 @@
+/* Text with Image Block */
+.text-with-image {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.text-with-image-container {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  min-height: 400px;
+  width: 100%;
+}
+
+/* Image Section */
+.text-with-image-image {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+}
+
+.text-with-image-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Base Text Section */
+.text-with-image-text {
+  color: #333;
+}
+
+.text-with-image-content {
+  color: #333;
+}
+
+.text-with-image-title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 20px;
+  color: #333;
+}
+
+.text-with-image-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 24px;
+  color: #666;
+}
+
+.text-with-image-cta {
+  display: inline-block;
+  color: #666;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  margin: 0;
+}
+
+.text-with-image-cta:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* Variation 1: Overlay Right (Default) */
+.text-with-image-overlay-right .text-with-image-text {
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px #000;
+  max-width: 400px;
+  z-index: 2;
+}
+
+/* Variation 2: Overlay Left */
+.text-with-image-overlay-left .text-with-image-text {
+  position: absolute;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px #000;
+  max-width: 400px;
+  z-index: 2;
+}
+
+/* Variation 3: Side by Side - Text Left, Image Right */
+.text-with-image-side-by-side-left {
+  align-items: center;
+}
+
+.text-with-image-side-by-side-left .text-with-image-text {
+  flex: 1;
+  padding: 60px;
+  background: #f8f9fa;
+}
+
+.text-with-image-side-by-side-left .text-with-image-image {
+  flex: 1;
+}
+
+/* Variation 4: Side by Side - Image Left, Text Right */
+.text-with-image-side-by-side-right {
+  align-items: center;
+}
+
+.text-with-image-side-by-side-right .text-with-image-text {
+  flex: 1;
+  padding: 60px;
+  background: #fff;
+}
+
+.text-with-image-side-by-side-right .text-with-image-image {
+  flex: 1;
+}
+
+/* Variation 5: Text Below */
+.text-with-image-text-below {
+  flex-direction: column;
+  min-height: auto;
+}
+
+.text-with-image-text-below .text-with-image-image {
+  width: 100%;
+  height: 400px;
+  flex: none;
+}
+
+.text-with-image-text-below .text-with-image-text {
+  padding: 40px 60px;
+  background: #fff;
+  text-align: center;
+}
+
+.text-with-image-text-below .text-with-image-title {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+/* Mobile Styles - Below 768px */
+@media (max-width: 767px) {
+  .text-with-image-container,
+  .text-with-image-side-by-side-left,
+  .text-with-image-side-by-side-right {
+    flex-direction: column;
+    min-height: auto;
+  }
+  
+  .text-with-image-image {
+    width: 100%;
+    height: 250px;
+    flex: none;
+  }
+  
+  .text-with-image-overlay-right .text-with-image-text,
+  .text-with-image-overlay-left .text-with-image-text {
+    position: static;
+    transform: none;
+    background: #fff;
+    backdrop-filter: none;
+    box-shadow: none;
+    border-radius: 0;
+    max-width: none;
+    padding: 32px 20px;
+    margin: 0;
+  }
+
+  .text-with-image-side-by-side-left .text-with-image-text,
+  .text-with-image-side-by-side-right .text-with-image-text {
+    padding: 32px 20px;
+    background: #fff;
+  }
+
+  .text-with-image-text-below .text-with-image-text {
+    padding: 32px 20px;
+  }
+  
+  .text-with-image-title {
+    font-size: 1.75rem;
+    margin-bottom: 16px;
+  }
+  
+  .text-with-image-description {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+
+  /* Ensure proper order on mobile */
+  .text-with-image-side-by-side-left .text-with-image-text {
+    order: 2;
+  }
+  
+  .text-with-image-side-by-side-left .text-with-image-image {
+    order: 1;
+  }
+}
+
+/* Tablet Styles - 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .text-with-image-overlay-right .text-with-image-text,
+  .text-with-image-overlay-left .text-with-image-text {
+    padding: 32px;
+    max-width: 350px;
+  }
+
+  .text-with-image-overlay-right .text-with-image-text {
+    right: 40px;
+  }
+
+  .text-with-image-overlay-left .text-with-image-text {
+    left: 40px;
+  }
+
+  .text-with-image-side-by-side-left .text-with-image-text,
+  .text-with-image-side-by-side-right .text-with-image-text {
+    padding: 40px;
+  }
+
+  .text-with-image-text-below .text-with-image-text {
+    padding: 32px 40px;
+  }
+  
+  .text-with-image-title {
+    font-size: 1.75rem;
+  }
+  
+  .text-with-image-description {
+    font-size: 0.95rem;
+  }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1200px) {
+  .text-with-image-container {
+    min-height: 500px;
+  }
+
+  .text-with-image-overlay-right .text-with-image-text {
+    right: 80px;
+    max-width: 450px;
+    padding: 48px;
+  }
+
+  .text-with-image-overlay-left .text-with-image-text {
+    left: 80px;
+    max-width: 450px;
+    padding: 48px;
+  }
+
+  .text-with-image-side-by-side-left .text-with-image-text,
+  .text-with-image-side-by-side-right .text-with-image-text {
+    padding: 80px;
+  }
+
+  .text-with-image-text-below .text-with-image-image {
+    height: 500px;
+  }
+
+  .text-with-image-text-below .text-with-image-text {
+    padding: 60px 80px;
+  }
+  
+  .text-with-image-title {
+    font-size: 2.25rem;
+    margin-bottom: 24px;
+  }
+  
+  .text-with-image-description {
+    font-size: 1.1rem;
+    margin-bottom: 28px;
+  }
+}

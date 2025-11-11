@@ -1,0 +1,87 @@
+.text-with-button {
+    padding: 16px 0 40px;
+}
+
+.text-with-button__button a {
+    margin: 20px 0 !important;
+    border-radius: 30px !important;
+    padding: 12px 40px !important;
+    background: #64513D !important;
+    color: #fff !important;
+    font-size: 12px;
+}
+
+.text-with-button__button a:hover{
+    text-decoration: underline !important;
+}
+
+.text-with-button__text > * {
+    color: #30261d;
+    margin-top: 0;
+}
+
+.section.text-with-button-container {
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: #f7f7f7
+}
+
+.text-with-button.centrealigned > * {
+    text-align: center;
+}
+
+.text-with-button-container:has(.secondarycolor) {
+    background-color: #4d6a78;
+}
+
+.text-with-button.secondarycolor .button {
+    background-color: #ffff !important;
+    color: #4d6a78 !important;
+}
+
+.text-with-button.secondarycolor .text-with-button__text > * {
+    color: #ffff;
+}
+
+
+.text-with-button.horizontalalignment .text-with-button__text > * {
+    margin: 25px 0 20px;
+}
+
+.text-with-button.horizontalalignment {
+     display: flex;
+     min-height: 250px;
+     padding: 0;
+     flex-direction: column;
+}
+
+.text-with-button.horizontalalignment .text-with-button__text {
+    padding: 12px 0;
+}
+
+.text-with-button.horizontalalignment .text-with-button__buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.text-with-button.horizontalalignment .text-with-button__buttons a {
+    margin: 0 0 10px !important;
+}
+
+@media (min-width: 1025px) {
+    .text-with-button__button a {
+        font-size: 16px;
+        padding: 18px 56px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .text-with-button.horizontalalignment {
+        flex-direction: row;
+    }
+
+    .text-with-button.horizontalalignment .text-with-button__text {
+        padding: 70px 70px 70px 0;
+    }
+}
